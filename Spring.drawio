@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-06-26T07:57:09.720Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="c4XwBQBGJUFAgFUgPmeA" version="13.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-26T09:44:11.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="p2Fy7ozIaQDaazWku7f5" version="13.3.1" type="github">
   <diagram id="XMMN3ruAPS4kzazKu4z4" name="第 1 页">
-    <mxGraphModel dx="2499" dy="844" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4380" dy="1793" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -182,13 +182,13 @@
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-80" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-family: , &amp;#34;microsoft yahei&amp;#34; ; font-size: 18px ; text-align: left&quot;&gt;一种能够实现父子容器关系的Bean Factory&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;labelBackgroundColor=none;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="1167" y="327" width="139" height="172" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-111" value="bean生命周期" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=44;align=left;startSize=51;" vertex="1" parent="1">
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-111" value="bean生命周期" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=30;align=left;startSize=51;" vertex="1" parent="1">
           <mxGeometry x="437" y="597" width="1380" height="869" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-112" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=1;fontFamily=Tahoma;fontSize=44;curved=1;" edge="1" parent="tXw_B3i7SKCKz7nnWvIf-111" source="tXw_B3i7SKCKz7nnWvIf-85" target="tXw_B3i7SKCKz7nnWvIf-110">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-85" value="经历N个xxxAware,把bean需要的spring组件调用setXXX方法注入给bean" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tXw_B3i7SKCKz7nnWvIf-111">
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-85" value="经历N个xxxAware,把bean需要的spring组件调用setXXX方法注入给bean" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="tXw_B3i7SKCKz7nnWvIf-111">
           <mxGeometry x="114" y="127" width="290" height="73" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-114" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;fontFamily=Tahoma;fontSize=44;curved=1;" edge="1" parent="tXw_B3i7SKCKz7nnWvIf-111" source="tXw_B3i7SKCKz7nnWvIf-88" target="tXw_B3i7SKCKz7nnWvIf-113">
