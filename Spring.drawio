@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-06-26T11:28:54.065Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="r9ojHKz54x7SfFjaQF3D" version="13.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-26T12:53:38.363Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="OwvlVVEJUT8uBPzI0dQ-" version="13.3.1" type="github">
   <diagram id="XMMN3ruAPS4kzazKu4z4" name="第 1 页">
-    <mxGraphModel dx="2506" dy="1987" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2327" dy="627" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-82" value="&lt;b&gt;拓展接口&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=32;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="365" y="-23" width="834" height="316" as="geometry" />
+          <mxGeometry x="360" y="26.5" width="834" height="316" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-18" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.109;entryY=1.003;entryDx=0;entryDy=0;shape=flexArrow;entryPerimeter=0;" edge="1" parent="1" source="tXw_B3i7SKCKz7nnWvIf-2" target="tXw_B3i7SKCKz7nnWvIf-35">
           <mxGeometry relative="1" as="geometry">
@@ -98,17 +98,30 @@
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-46" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;direction=east;" vertex="1" parent="1">
           <mxGeometry x="-359.75" y="536" width="20" height="145" as="geometry" />
         </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-181" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=classic;endFill=1;fontFamily=Tahoma;fontSize=16;dashed=1;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tXw_B3i7SKCKz7nnWvIf-47" target="tXw_B3i7SKCKz7nnWvIf-183">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1011" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-47" value="BeanFactoryPostProcessor&lt;br&gt;对工厂进行拓展增强" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;gradientColor=#97d077;" vertex="1" parent="1">
           <mxGeometry x="-511" y="592.5" width="147" height="32" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-48" value="初始对象" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" vertex="1" parent="1">
           <mxGeometry x="-110" y="484" width="118" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-51" value="Environment&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=middle;align=center;gradientColor=#97d077;" vertex="1" parent="1">
-          <mxGeometry x="-205" y="823" width="110" height="35" as="geometry" />
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-179" style="edgeStyle=none;shape=flexArrow;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;fontFamily=Tahoma;fontSize=16;" edge="1" parent="1" source="tXw_B3i7SKCKz7nnWvIf-51" target="tXw_B3i7SKCKz7nnWvIf-35">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-54" value="&lt;span&gt;以k-v形式&lt;/span&gt;&lt;br&gt;&lt;span&gt;存储配置文件诸如xxx.properties,&lt;/span&gt;&lt;br&gt;&lt;span&gt;xxx.yml&lt;/span&gt;&lt;br&gt;&lt;span&gt;中的配置参数&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-191.5" y="868" width="103" height="100" as="geometry" />
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-180" value="提供环境变量，&lt;br&gt;其他参数" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontFamily=Tahoma;" vertex="1" connectable="0" parent="tXw_B3i7SKCKz7nnWvIf-179">
+          <mxGeometry x="0.3397" y="-1" relative="1" as="geometry">
+            <mxPoint x="-35.97" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-51" value="Environment&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=middle;align=center;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="-668" y="342.5" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-54" value="&lt;span&gt;以k-v形式&lt;/span&gt;&lt;br&gt;&lt;span&gt;存储配置文件&lt;/span&gt;&lt;br&gt;&lt;span&gt;中的配置参数。&lt;br&gt;环境变量&lt;br&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="289" width="103" height="100" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-59" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tXw_B3i7SKCKz7nnWvIf-55" target="tXw_B3i7SKCKz7nnWvIf-60">
           <mxGeometry relative="1" as="geometry">
@@ -130,7 +143,7 @@
           <mxGeometry x="-80.23000000000002" y="1171.53" width="88.47" height="36.47" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-61" value="&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 14px;&quot;&gt;当一个Bean实现了&lt;/span&gt;&lt;code style=&quot;font-family: consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;FactoryBean&lt;/code&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 14px;&quot;&gt;接口后，Spring会先实例化这个工厂，然后调用&lt;/span&gt;&lt;code style=&quot;font-family: consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;getObject()&lt;/code&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 14px;&quot;&gt;创建真正的Bean。&lt;/span&gt;&lt;code style=&quot;font-family: consolas, monospace, serif; color: rgb(221, 0, 85); padding: 0px 4px; border: 1px solid rgb(221, 221, 221); border-radius: 3px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;getObjectType()&lt;/code&gt;&lt;span style=&quot;color: rgb(102, 102, 102); font-family: &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 14px;&quot;&gt;可以指定创建的Bean的类型，因为指定类型不一定与实际类型一致，可以是接口或抽象类。&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-558" y="1153" width="211" height="205" as="geometry" />
+          <mxGeometry x="-565" y="1171.53" width="211" height="182" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-64" value="用spring提供的工厂模式自定义规则生产bean" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="-551" y="1100" width="540" height="60" as="geometry" />
@@ -154,16 +167,16 @@
           <mxGeometry x="-651" y="727" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-76" value="&lt;span style=&quot;color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;ListableBeanFactory&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="572" y="105" width="168" height="82" as="geometry" />
+          <mxGeometry x="567" y="154.5" width="168" height="82" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-77" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-family: , &amp;#34;microsoft yahei&amp;#34; ; font-size: 18px ; text-align: left&quot;&gt;它可以列举出所有的Bean示例，而不是当客户端请求的时候去根据名字一个一个的查找。&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;labelBackgroundColor=none;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="411" y="67" width="139" height="172" as="geometry" />
+          <mxGeometry x="406" y="116.5" width="139" height="172" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-79" value="&lt;span style=&quot;color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;HierarchicalBeanFactory&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="801" y="99" width="198" height="94" as="geometry" />
+          <mxGeometry x="796" y="148.5" width="198" height="94" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-80" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-family: , &amp;#34;microsoft yahei&amp;#34; ; font-size: 18px ; text-align: left&quot;&gt;一种能够实现父子容器关系的Bean Factory&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;labelBackgroundColor=none;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1016" y="70" width="139" height="172" as="geometry" />
+          <mxGeometry x="1011" y="119.5" width="139" height="172" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-111" value="bean生命周期" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=30;align=left;startSize=51;" vertex="1" parent="1">
           <mxGeometry x="437" y="597" width="1380" height="869" as="geometry" />
@@ -278,6 +291,15 @@
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-173" value="&lt;font style=&quot;font-size: 16px&quot;&gt;定义bean信息&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=30;fontFamily=Tahoma;" vertex="1" parent="1">
           <mxGeometry x="-986" y="757" width="109" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-183" value="BeanFactoryPostProcessor大致逻辑" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=16;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-1527" y="291.5" width="511" height="243.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-186" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 12px&quot;&gt;List&amp;lt;BeanFactoryPostProcessor&amp;gt; bfppList = new ArrayList();&lt;br style=&quot;font-size: 12px&quot;&gt;for(Definition d: list){&lt;br style=&quot;font-size: 12px&quot;&gt;&amp;nbsp; &amp;nbsp; Class&amp;lt;?&amp;gt; clazz = d.getBeanDefinitionClass();&lt;br style=&quot;font-size: 12px&quot;&gt;&amp;nbsp; &amp;nbsp; if(BeanFactoryPostProcessor.class.isAssignableFrom(clazz)){&lt;br style=&quot;font-size: 12px&quot;&gt;&amp;nbsp; &amp;nbsp; bfppList&amp;nbsp;.add(clazz.newInstance);&lt;br style=&quot;font-size: 12px&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;br style=&quot;font-size: 12px&quot;&gt;}&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;fontFamily=Tahoma;" vertex="1" parent="tXw_B3i7SKCKz7nnWvIf-183">
+          <mxGeometry x="15" y="103.5" width="496" height="131" as="geometry" />
+        </mxCell>
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-188" value="&lt;span&gt;Application Context能够自动探测到&lt;/span&gt;&lt;span style=&quot;text-align: left&quot;&gt;BeanFactoryPostProcessor，并且能够在其他bean创建之前创建它。大致原理如下&lt;/span&gt;" style="text;html=1;strokeColor=#56517e;fillColor=#d0cee2;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=14;" vertex="1" parent="tXw_B3i7SKCKz7nnWvIf-183">
+          <mxGeometry x="53" y="37.5" width="331" height="56.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
