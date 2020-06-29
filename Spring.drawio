@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-06-28T14:24:08.103Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="7Irz9_R2sFqN0Js_zBaG" version="13.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-29T12:23:49.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="G94Q8R_cVBjLr9sa_WJY" version="13.3.5" type="github">
   <diagram id="XMMN3ruAPS4kzazKu4z4" name="第 1 页">
-    <mxGraphModel dx="4302" dy="3214" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2900" dy="2131" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -175,8 +175,8 @@
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-80" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; font-family: , &amp;#34;microsoft yahei&amp;#34; ; font-size: 18px ; text-align: left&quot;&gt;一种能够实现父子容器关系的Bean Factory。如Spring和SpringMVC之间的关系&amp;nbsp;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;labelBackgroundColor=none;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="116" y="-89" width="139" height="172" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-111" value="bean生命周期" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=30;align=left;startSize=51;" parent="1" vertex="1">
-          <mxGeometry x="417" y="433" width="1407" height="1308" as="geometry" />
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-111" value="bean生命周期（singleton）" style="swimlane;labelBackgroundColor=none;fontFamily=Tahoma;fontSize=30;align=left;startSize=51;" parent="1" vertex="1">
+          <mxGeometry x="460" y="10" width="1407" height="1308" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-112" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=1;fontFamily=Tahoma;fontSize=44;curved=1;" parent="tXw_B3i7SKCKz7nnWvIf-111" source="tXw_B3i7SKCKz7nnWvIf-85" target="tXw_B3i7SKCKz7nnWvIf-110" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -262,7 +262,7 @@
         <mxCell id="xmBUPuvpDFF9H8NhYAbc-6" value="如果需要定义bean销毁时执行的逻辑。就需要注册必要的Destruction相关回调接口" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="tXw_B3i7SKCKz7nnWvIf-111">
           <mxGeometry x="131" y="914" width="290" height="73" as="geometry" />
         </mxCell>
-        <mxCell id="tXw_B3i7SKCKz7nnWvIf-94" value="执行接口DisposableBean的destroy方法" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="tXw_B3i7SKCKz7nnWvIf-111" vertex="1">
+        <mxCell id="tXw_B3i7SKCKz7nnWvIf-94" value="容器关闭前执行接口DisposableBean的destroy方法" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="tXw_B3i7SKCKz7nnWvIf-111" vertex="1">
           <mxGeometry x="131" y="1113" width="290" height="73" as="geometry" />
         </mxCell>
         <mxCell id="tXw_B3i7SKCKz7nnWvIf-101" value="执行用户自定义的销毁方法" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="tXw_B3i7SKCKz7nnWvIf-111" vertex="1">
@@ -347,6 +347,24 @@
         </mxCell>
         <mxCell id="xmBUPuvpDFF9H8NhYAbc-29" value="ResourceLoader" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=middle;align=center;gradientColor=#97d077;" vertex="1" parent="1">
           <mxGeometry x="-243" y="762.5" width="94" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-36" value="Spring上下文" style="swimlane;fontSize=16;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-776" y="1555" width="763" height="663" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-38" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="xmBUPuvpDFF9H8NhYAbc-36" source="xmBUPuvpDFF9H8NhYAbc-32" target="xmBUPuvpDFF9H8NhYAbc-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-32" value="&lt;pre style=&quot;font-family: &amp;quot;jetbrains mono medium&amp;quot;; font-size: 9.8pt;&quot;&gt;ApplicationContext&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="xmBUPuvpDFF9H8NhYAbc-36">
+          <mxGeometry x="23" y="59" width="211" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-40" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="xmBUPuvpDFF9H8NhYAbc-36" source="xmBUPuvpDFF9H8NhYAbc-37" target="xmBUPuvpDFF9H8NhYAbc-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-37" value="&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono medium&amp;#34; ; font-size: 9.8pt&quot;&gt;AbstractApplicationContext&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="xmBUPuvpDFF9H8NhYAbc-36">
+          <mxGeometry x="23" y="164" width="211" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="xmBUPuvpDFF9H8NhYAbc-39" value="&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono medium&amp;#34; ; font-size: 9.8pt&quot;&gt;refresh()&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" vertex="1" parent="xmBUPuvpDFF9H8NhYAbc-36">
+          <mxGeometry x="314" y="164" width="99" height="53" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
