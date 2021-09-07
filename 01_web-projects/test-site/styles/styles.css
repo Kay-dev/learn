@@ -1,0 +1,48 @@
+html {
+    font-size: 20px;
+    font-family: 'Zhi Mang Xing', cursive;
+    background-color: seashell;
+
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #00539F;
+    text-shadow: 2px 2px 2px black;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 10px 40px;
+}
+
+li {
+    margin-left: 60px;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: snow;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
