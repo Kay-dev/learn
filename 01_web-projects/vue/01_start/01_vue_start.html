@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>vue基础</title>
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <style>
+            .active {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <!--设置textContent-->
+            <h2>{{ school.name }}{{ school.mobile }}</h2><br>
+            <!--v-text会替换标签中的文本-->
+            <h2 v-text="message+'!!'">原文本</h2>
+            <!--遍历列表-->
+            <ul>
+                <!--遍历列表元素-->
+                <li v-for="item in campus" :title="item">城市：{{ item }}</li>
+            </ul>
+            <ul>
+                <!--遍历列表元素和索引-->
+                <li v-for="(item,index) in campus" :title="item">序号：{{ index + 1 }} &nbsp 城市：{{ item }}</li>
+            </ul>
+            <hr>
+            <!--设置html元素-->
+            <p v-html="content"></p>
+            <hr>
+            <!--为元素绑定事件-->
+            <input type="button" value="点击事件" v-on:click="testClick">
+            <input type="button" value="双击事件" @dblclick="testDBClick">
+            <input type="button" value="按下enter" @keyup.enter='sayHi("arly")'>
+            <hr>
+            <!--操作元素display样式控制隐藏/显示-->
+            <a v-show="true" href="https://www.baidu.com">显示</a>
+            <a v-show="isShow">隐藏</a>
+            <!--直接控制元素是否生成-->
+            <p v-if="true">我是一个p标签</p>
+            <p v-if="isShow">我是隐藏的一个p标签</p>
+            <!--绑定元素的属性-->
+            <img v-bind:src="imgSrc" alt="属性绑定">
+            <img :src="imgSrc" alt="简化的属性绑定">
+            <img :src="imgSrc" alt="绑定class" :class="{active:isActive}">
+            <hr>
+            <!--双向绑定-->
+            <input type="text" v-model="message">
+        </div>
+
+        <script>
+            let app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Jelly!',
+                    school: {
+                        name: 'heima',
+                        mobile: "400-133-9090"
+                    },
+                    campus: ['上海', '北京', '长沙'],
+                    content: "<a href='https://www.google.com'>google</a>",
+                    isShow: false,
+                    imgSrc: 'https://www.itheima.com/images/logo.png',
+                    isActive: true
+                },
+                methods: {
+                    testClick: function () {
+                        this.campus[0] = '深圳'
+                        alert("点击了一下")
+                    },
+                    testDBClick: function () {
+                        this.school.name = 'harvard'
+                        alert("双击了一下")
+                    },
+                    sayHi: function (name) {
+                        alert('Hi ' + name)
+                    }
+                }
+            });
+
+        </script>
+    </body>
+</html>

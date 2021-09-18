@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<header></header>
+<section></section>
+<script>
+    let header = document.querySelector("header");
+    let section = document.querySelector("section");
+
+    let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    function populateHeader(jsonObj) {
+        let myH1 = document.createElement('h1');
+        myH1.textContent = jsonObj['squadName'];
+        header.appendChild(myH1);
+
+        let myPara = document.createElement('p');
+        myPara.textContent = 'Hometown:' + jsonObj['homeTown'] + '// Forward: ' + jsonObj['formed'];
+        header.appendChild(myPara);
+    }
+
+    function showHeroes(jsonObj) {
+        let members = jsonObj['members']
+        for (let member in members) {
+            let myArticle = document.createElement('article');
+            let myH2 = document.createElement('h2');
+
+            let heros = members[member];
+            myH2.textContent = heros['name'];
+            myArticle.appendChild(myH2);
+
+            for (let detail in heros) {
+                if (Array.isArray(heros[detail])) {
+                    let mypu = document.createElement('p');
+                    mypu.textContent = 'Superpowers:';
+                    myArticle.appendChild(mypu);
+                    let myul = document.createElement('ul');
+                    myArticle.appendChild(myul);
+                    for (let item in heros[detail]) {
+                        let myitem = document.createElement('li');
+                        myitem.textContent = heros[detail][item];
+                        myul.appendChild(myitem);
+                    }
+                } else {
+                    let myp = document.createElement('p');
+                    myp.textContent = detail +':'+ heros[detail];
+                    myArticle.appendChild(myp);
+                }
+            }
+            section.appendChild(myArticle);
+        }
+    }
+
+    request.onload = function () {
+        let superHeroes = request.response;
+        populateHeader(superHeroes);
+        showHeroes(superHeroes);
+    }
+</script>
+</body>
+</html>

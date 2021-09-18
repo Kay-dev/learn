@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>axios网络请求</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="app">
+            <label>
+                <input type="text" v-model="city" @keydown.enter="getWeather">
+            </label>
+            <input type="button" value="获取天气" class="get" @click="getWeather"><br>
+            <div @click="findCityWea">
+                <label>北京</label>
+                <label>上海</label>
+                <label>广州</label>
+                <label>深圳</label>
+            </div>
+            <hr>
+            <p v-show="isShow">{{ detail.city }}今天{{ detail.wea }},气温{{ detail.tem_night }}-{{
+                    detail.tem_day
+                }}摄氏度，{{ detail.win }}{{ detail.win_speed }},风速{{ detail.win_meter }}</p>
+        </div>
+
+        <script>
+
+            let app = new Vue({
+                el: '#app',
+                data: {
+                    city: '',
+                    detail: {
+                        "cityid": "",
+                        "city": "",
+                        "update_time": "",
+                        "wea": "",
+                        "wea_img": "",
+                        "tem": "",
+                        "tem_day": "",
+                        "tem_night": "",
+                        "win": "",
+                        "win_speed": "",
+                        "win_meter": "",
+                        "air": ""
+                    },
+                    isShow: false
+                },
+                methods: {
+                    getWeather: function () {
+                        console.log(this.city)
+                        this.getWeaAPI();
+                    },
+                    findCityWea: function (e) {
+                        if (e.target && e.target.nodeName === 'LABEL') {
+                            this.city = e.target.textContent;
+                            this.getWeaAPI();
+                        }
+                    },
+                    getWeaAPI:function (){
+                        axios.get("https://tianqiapi.com/free/day?appid=34396667&appsecret=0If1a4dt&city=" + this.city)
+                            .then((response) => {
+                                this.isShow = true;
+                                this.detail = response.data;
+                            }, (err) => console.log(err))
+                    }
+
+                }
+            })
+
+        </script>
+    </body>
+</html>

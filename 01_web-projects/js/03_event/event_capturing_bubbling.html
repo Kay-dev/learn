@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡和捕捉</title>
+    <style>
+        div {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 480px;
+            height: 380px;
+            border-radius: 10px;
+            background-color: #eee;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+        }
+
+        .hidden {
+            left: -50%;
+        }
+
+        .showing {
+            left: 50%;
+        }
+
+        div video {
+            display: block;
+            width: 400px;
+            margin: 40px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Display Video</button>
+    <div class="hidden">
+        <video>
+            <source src="video/rabbit320.mp4" type="video/mp4">
+            <source src="video/rabbit320.webm" type="video/webm">
+            <p>Your browser doesn't support HTML5 video.here is a <a href="video/rabbit320.mp4">link to the video</a></p>
+        </video>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button');
+        const videoBox = document.querySelector('div');
+        const video = document.querySelector('video');
+
+        btn.onclick = function (e) {
+            videoBox.setAttribute('class', 'showing');
+        }
+
+        videoBox.onclick=function (e) {
+            videoBox.setAttribute('class', 'hidden');
+        }
+
+        video.onclick = function (e) {
+            // 阻止事件在冒泡链上传播
+            e.stopPropagation()
+            video.play();
+        };
+    </script>
+</body>
+
+</html>
