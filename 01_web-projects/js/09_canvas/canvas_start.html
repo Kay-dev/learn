@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Canvas</title>
+        <style>
+            /* 隐藏滚动条 */
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas class="myCanvas">
+            <p>添加恰当的反馈信息</p>
+        </canvas>
+        <script>
+            var canvas = document.querySelector(".myCanvas");
+            // 设置画布大小
+            var width = (canvas.width = window.innerWidth);
+            var height = (canvas.height = window.innerHeight);
+            // 添加一个2d画布
+            var ctx = canvas.getContext("2d");
+            // 操作画布属性
+            ctx.fillStyle = "rgb(0,0,0)";
+            ctx.fillRect(0, 0, width, height);
+            // 矩形填充，两个图层重叠时，新图层总会覆盖旧层
+            ctx.fillStyle = "rgb(255,0,0)";
+            ctx.fillRect(50, 50, 100, 150);
+            ctx.fillStyle = "rgb(0,255,0)";
+            ctx.fillRect(75, 75, 100, 100);
+            ctx.fillStyle = "rgba(255,0,255,0.75)";
+            ctx.fillRect(25, 100, 175, 50);
+            // 描边矩形, lineWidth必须放在两行中间才生效
+            ctx.strokeStyle = "rgb(255,255,255)";
+            ctx.lineWidth = 5;
+            ctx.strokeRect(25, 25, 175, 200);
+
+            // 路径绘制，此处绘制了一个等边三角形
+            ctx.fillStyle = "rgb(255,0,0)";
+            ctx.beginPath();
+            ctx.moveTo(150, 150);
+            ctx.fill();
+            ctx.lineTo(250, 150);
+            var triHeight = 50 * Math.tan(degToRad(60));
+            ctx.lineTo(200, 150 + triHeight);
+            ctx.lineTo(150, 150);
+            ctx.fill();
+
+            //   角度转弧度
+            function degToRad(degrees) {
+                return (degrees * Math.PI) / 180;
+            }
+
+            // 画圆
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.beginPath();
+            ctx.arc(250, 106, 50, degToRad(0), degToRad(360), false);
+            ctx.fill();
+
+            // 绘制文本
+            ctx.strokeStyle = "white";
+            ctx.lineWidth = 1;
+            ctx.font = "36px arial";
+            ctx.strokeText("Canvas text", 50, 300);
+            ctx.fillStyle = "red";
+            ctx.font = "48px georgia";
+            ctx.fillText("Canvas text", 50, 350);
+
+            // 嵌入图片
+            var image = new Image();
+            image.src = "chrome.png";
+            image.onload = function () {
+                ctx.drawImage(image, 150, 150);
+            };
+        </script>
+    </body>
+</html>
